@@ -50,8 +50,8 @@ span {
   box-shadow: 0 0 calc(var(--width)* 2) var(--color1);
 
   transition: background-color 2s ease, box-shadow 2s ease;
-  animation: animateBubbles calc(50s/var(--i)) linear infinite;
-  animation-delay: -5s;
+  animation: animateBubbles calc(120s/var(--i)) linear infinite;
+  animation-delay: -100s;
 }
 
 span:nth-of-type(4n + 1){
