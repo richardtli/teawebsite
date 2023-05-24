@@ -175,7 +175,7 @@ span:nth-of-type(4n + 3){
   width: 100%;
   position: sticky;
   top: 40svh;
-  margin-bottom: 40svh;
+  margin-bottom: 10svh;
 }
 
 #t-cross{
