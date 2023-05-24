@@ -3,7 +3,7 @@ function scale(number, inMin, inMax, outMin, outMax) {
   }
   
   let speed = 0;
-  let numOfBubs = 200;
+  let numOfBubs = 100;
   let width = 0;
   
   const bubbleDiv = document.querySelector(".bubbles");
