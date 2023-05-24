@@ -49,7 +49,7 @@ span {
   border-radius: 50%;
   box-shadow: 0 0 calc(var(--width)* 2) var(--color1);
 
-  transition: background-color 2s ease, box-shadow 2s ease;
+  transition: background-color 2s, box-shadow 2s;
   animation: animateBubbles calc(120s/var(--i)) linear infinite;
   animation-delay: -100s;
 }
@@ -143,36 +143,11 @@ span:nth-of-type(4n + 3){
 }
 
 .about{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 600svh;
-  /* background-color: #030713; */
-
   position: relative;
 }
 
-.track-container-container{
-  width: 100%;
-  position: sticky;
-  top: 0px;
-  z-index: 2;
-}
-.track-container{
-  position: relative;
-}
-
-.track{
-  width: 100%;
-}
-
-.cars{
-  transition: opacity 1s linear;
-  width: 100%;
-  background-color: pink;
-  display: none;
-}
-
+/*
 .hidden{
   opacity: 0;
   filter: blur(5px);
@@ -182,33 +157,44 @@ span:nth-of-type(4n + 3){
 .show {
   filter: blur(0px);
   opacity: 1;
-}
+} */
 
 
 .about-sector{
   position: relative;
-
   width: 100%;
   height:200svh;
 
 }
 
 .amusement-sector{
-  border-bottom: 2px solid #BFFF00;
+  border-bottom: 2px solid #ff0090;
 }
 
 .amusement-svg {
-  width: 80%;
+  width: 100%;
   position: sticky;
   top: 40svh;
   margin-bottom: 40svh;
 }
 
+#t-cross{
+  opacity: 0;
+  transition: all 1s;
+}
+
 .ferris-wheel{
   position: absolute;
-  width: 30%;
+  width: 50%;
   bottom: 0px;
-  left: -10%;
+  right: -10%;
+}
+
+.roller-coaster{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width: 105%;
 }
 
 
