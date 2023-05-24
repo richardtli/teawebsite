@@ -21,13 +21,17 @@ const showScrollProgressionAmusement = () => {
         percentage = (container.scrollTop - window.innerHeight) / (amusementSector.offsetHeight - window.innerHeight)
         drawLength = amusementTextLength * percentage
         amusementText.style.strokeDashoffset =  amusementTextLength-drawLength
+        document.documentElement.style.setProperty('--color1', '#FF1D00');
+        document.documentElement.style.setProperty('--color2', '#FF8E00');
+        document.documentElement.style.setProperty('--color3', '#FFED00');
+        document.documentElement.style.setProperty('--color4', '#BFFF00');
     }
 
-    // else if(container.scrollTop > about.offsetHeight){
-    //     container.removeEventListener('scroll', showTrackProgression)
-    //     track.style.strokeDashoffset =  2*trackLength
-    //     cars.style.opacity = "1"
-    // }
+    else if(container.scrollTop > amusementSector.offsetHeight){
+        container.removeEventListener('scroll', showScrollProgressionAmusement)
+        amusementText.style.strokeDashoffset =  0
+
+    }
 }
 
 container.addEventListener('scroll', showScrollProgressionAmusement)
