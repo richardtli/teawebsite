@@ -14,7 +14,7 @@ function scale(number, inMin, inMax, outMin, outMax) {
     bubble.style.setProperty("--w", bubble.style.width);
     speed = (Math.random()**2 * (50 - 10) + 10).toFixed(2);
     bubble.style.setProperty("--i", speed);
-    if (speed > 42) {
+  if (speed > 42) {
       bubble.style.zIndex = "2"
     } else {
       bubble.style.zIndex = "-2"

@@ -21,10 +21,10 @@ const showScrollProgressionAmusement = () => {
         percentage = (container.scrollTop - window.innerHeight) / (amusementSector.offsetHeight - window.innerHeight)
         drawLength = amusementTextLength * percentage
         amusementText.style.strokeDashoffset =  amusementTextLength-drawLength
-        document.documentElement.style.setProperty('--color1', '#FF1D00');
-        document.documentElement.style.setProperty('--color2', '#FF8E00');
-        document.documentElement.style.setProperty('--color3', '#FFED00');
-        document.documentElement.style.setProperty('--color4', '#BFFF00');
+document.documentElement.style.setProperty('--color1', '##fc0072');
+        document.documentElement.style.setProperty('--color2', '#b900fc');
+        document.documentElement.style.setProperty('--color3', '#00fcf4');
+        document.documentElement.style.setProperty('--color4', '#5c00fc');
     }
 
     else if(container.scrollTop > amusementSector.offsetHeight){
