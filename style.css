@@ -163,7 +163,7 @@ span:nth-of-type(4n + 3){
 .about-sector{
   position: relative;
   width: 100%;
-  height: 150svh;
+  height: 200svh;
 
 }
 
@@ -175,7 +175,7 @@ span:nth-of-type(4n + 3){
   width: 100%;
   position: sticky;
   top: 40svh;
-  margin-bottom: 5svh;
+  margin-bottom: 30svh;
 }
 
 #t-cross{
