@@ -171,7 +171,15 @@ span:nth-of-type(4n + 3){
   border-bottom: 2px solid #ff0090;
 }
 
-.amusement-svg {
+.aquariums-sector{
+  border-bottom: 2px solid #00ffa2;
+}
+
+.haunted-sector{
+  border-bottom: 2px solid #ff8000;
+}
+
+.text-svg {
   width: 100%;
   position: sticky;
   top: 40svh;
