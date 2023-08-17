@@ -16,6 +16,7 @@
 }
 body {
   background-color: black;
+  font-family: 'Roboto';
 }
 
 
@@ -187,7 +188,7 @@ span:nth-of-type(4n + 3){
   margin-bottom: 30svh;
 }
 
-#t-cross{
+#t-cross, #t-cross2, #i-cross{
   opacity: 0;
   transition: all 1s;
 }
@@ -213,11 +214,35 @@ span:nth-of-type(4n + 3){
   width: 110%;
 }
 
+.aquarium-animation{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
 
 
 
 .projects{
   height: 120svh;
+}
+
+.scroll-here-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fade 5.3s linear infinite;
+}
+
+@keyframes fade {
+  0%, 30%{opacity: 0;}
+
+  40%, 85% {opacity: 1;}
+
+  100%{opacity: 0;}
+
 }
 
 
