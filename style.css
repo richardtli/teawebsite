@@ -50,7 +50,7 @@ span {
   border-radius: 50%;
   box-shadow: 0 0 calc(var(--width)* 2) var(--color1);
 
-  transition: background-color 1s, box-shadow 1s;
+  transition: background-color 1s, box-shadow 1s, display 1s;
   animation: animateBubbles calc(120s/var(--i)) linear infinite;
   animation-delay: -100s;
 }
@@ -144,7 +144,7 @@ span:nth-of-type(4n + 3){
 }
 
 .about{
-  height: 600svh;
+  /* height: 600svh; */
   position: relative;
 }
 
@@ -224,8 +224,8 @@ span:nth-of-type(4n + 3){
 
 
 
-.projects{
-  height: 50svh;
+.projects-page{
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,9 +249,22 @@ span:nth-of-type(4n + 3){
   
 }
 
-.interested-text{
-  font-size: 4rem;
+.header-text{
+  font-size: 3rem;
   color: white;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 
