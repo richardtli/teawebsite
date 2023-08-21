@@ -159,17 +159,18 @@ const showScrollProgressionAmusement = () => {
     aquariumsText.style.strokeDashoffset = 0;
     iCross.style.opacity = "1";
   }
-  // else if (
-  //   container.scrollTop >
-  //   amusementSector.offsetHeight +
-  //     window.innerHeight +
-  //     hauntedSector.offsetHeight
-  //     + aquariumsSector.offsetHeight
-  // ){
-  //   bubbles.forEach((bubble) => {
-  //     bubble.style.display = 'none';
-  //   });
-  // }
+  else if (
+    container.scrollTop >
+    amusementSector.offsetHeight +
+      window.innerHeight +
+      hauntedSector.offsetHeight
+      + aquariumsSector.offsetHeight
+  ){
+    document.documentElement.style.setProperty("--color1", "#FF6600");
+    document.documentElement.style.setProperty("--color2", "#8800FF");
+    document.documentElement.style.setProperty("--color3", "transparent");
+    document.documentElement.style.setProperty("--color4", "#FF0000");
+  }
 };
 
 container.addEventListener("scroll", showScrollProgressionAmusement);
