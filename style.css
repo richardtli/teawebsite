@@ -321,7 +321,28 @@ span:nth-of-type(4n + 3){
 
 
 .footer{
-  margin-top: 100svh;
+  margin-top: 20svh;
+  margin-bottom: 20svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
+
+.interested{
+  margin-bottom: 20svh;
+}
+
+.button{
+  color: white;
+  border-radius: 5px;
+  border: solid white 5px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 30px;
+}
+
+
 
 
