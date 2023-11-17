@@ -250,6 +250,7 @@ span:nth-of-type(4n + 3) {
   margin-top: var(--header-margin);
   font-size: 3rem;
   color: white;
+  text-align: center;
 }
 
 .hidden-left {
@@ -364,7 +365,7 @@ span:nth-of-type(4n + 3) {
   .tea-fireworks-container {
     margin-top: auto;
     transform: translateY(5%);
-    width: 40%;
+    width: max(40%, 600px);
     animation: TeaFireworksFadeIn 1s ease-in forwards;
     animation-delay: 1s;
     opacity: 0;
@@ -373,7 +374,7 @@ span:nth-of-type(4n + 3) {
 
   .tea-letters-container {
     position: absolute;
-    width: 7%;
+    width: max(100px, 7%);
     bottom: 30px;
     animation: TeaLettersFadeIn 2s ease forwards;
     animation-delay: 2.6s;
@@ -410,6 +411,7 @@ span:nth-of-type(4n + 3) {
   }
 
   .header-text {
+
     margin-top: var(--header-margin);
     font-size: 8rem;
     color: white;
