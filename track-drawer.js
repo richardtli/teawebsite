@@ -65,7 +65,7 @@ const hauntedTextLength = hauntedText.getTotalLength();
 hauntedText.style.strokeDasharray = hauntedTextLength;
 hauntedText.style.strokeDashoffset = hauntedTextLength;
 
-let percentage2 = 0;
+let percentage2 = 0; 
 let drawLength2 = 0;
 
 const aquariumsTextLength = aquariumsText.getTotalLength();
